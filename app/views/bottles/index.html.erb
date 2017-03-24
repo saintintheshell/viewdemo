@@ -1,0 +1,17 @@
+<!-- <h1>Bottles#index</h1>
+<p>Find me in app/views/bottles/index.html.erb</p> -->
+
+<% @bottles.each do |b| %>
+<p>
+  <%= pluralize b, 'bottle' %>
+of beer on the wall,
+<br/>
+<%= pluralize b, 'bottle' %>
+of beer!
+<br/>
+Take one down, pass it around,
+<br/>
+<%= pluralize b-1, 'bottle' %>
+of beer on the wall!
+</p>
+<% end %>
